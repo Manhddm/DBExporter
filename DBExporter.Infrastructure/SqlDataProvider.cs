@@ -8,7 +8,7 @@ using System.Text;
 
 namespace DBExporter.Infrastructure
 {
-    public class DataProvider : IDataProvider
+    public class SqlDataProvider : IDataProvider
     {
         public (string tableName, IEnumerable<IDictionary<string, object>> data) GetData(string connectionString, string query, bool isTableName)
         {

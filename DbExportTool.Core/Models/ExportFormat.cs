@@ -1,6 +1,7 @@
 ﻿namespace DbExportTool.Core.Models
 {
-    public class ExportFormat
+    public enum ExportFormat
     {
+        Csv, Sql
     }
 }

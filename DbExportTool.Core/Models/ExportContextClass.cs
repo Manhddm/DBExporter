@@ -4,7 +4,10 @@ using System.Text;
 
 namespace DbExportTool.Core.Models
 {
-    internal class ExportContextClass1
+    public class ExportContextClass
     {
+        public string TableName { get; set; }
+        public string FilePath { get; set; }
+        public ExportFormat Format { get; set; }
     }
 }
