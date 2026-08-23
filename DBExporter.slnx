@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="DBExporter.Infrastructure/DBExporter.Infrastructure.csproj" />
   <Project Path="DBExporter/DBExporter.csproj" />
   <Project Path="DbExportTool.Core/DbExportTool.Core.csproj" />
+  <Project Path="DBExporter.Infrastructure/DBExporter.Infrastructure.csproj" />
 </Solution>
