@@ -1,12 +1,8 @@
 ﻿using DbExportTool.Core.Abstractions;
 using DbExportTool.Core.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace DBExporter.Infrastructure.Utilities
 {
-    internal class FileNameBuilder : IFileNameBuilder
+    public class FileNameBuilder : IFileNameBuilder
     {
         public string Build(ExportOptions options, string defaultTableName)
         {

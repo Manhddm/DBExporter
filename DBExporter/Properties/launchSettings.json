@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DBExporter": {
+      "commandName": "Project",
+      "commandLineArgs": "-c \"Server=.\\SQLEXPRESS;Database=CSDLThuVien;Integrated Security=True;TrustServerCertificate=True\" -f \"data\" -q \"tSach\" -t -m csv"
+    }
+  }
+}

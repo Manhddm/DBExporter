@@ -1,10 +1,7 @@
-﻿
+
 using Dapper;
 using DbExportTool.Core.Abstractions;
 using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DBExporter.Infrastructure
 {
@@ -24,7 +21,7 @@ namespace DBExporter.Infrastructure
                 tableName = ExtractTableNameFromSelect(query) ?? "ExportData";
                 finalSql = query;
             }
-            using var connection = new SqlConnection(connectionString);
+            var connection = new SqlConnection(connectionString);
             connection.Open();
             var rows = connection.Query(finalSql, buffered:  false);
 
